@@ -16,7 +16,7 @@ html {
 
 
 #tf-home {
-    background: url(../img/bg/together.jpg);
+    background: url(../img/bg/doit.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,12 +31,12 @@ html {
     background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
-    padding: 20% 0;
+    padding: 22% 0;
     background-attachment: fixed;
 }
 
 #tf-home h1 { color: #ffcc33 }
-.content-heading p.lead { margin-bottom: 80px }
+.content-heading p.lead { margin-bottom: 40px }
 a.goto-btn {
     font-size: 18px;
     font-weight: 700;
