@@ -252,3 +252,30 @@ h5.media-heading {
     font-family: 'Lato', sans-serif;
     color: #3c8dbc;
 }
+
+
+
+
+/* Used for scroll */
+
+a.goto-btn {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+a.goto-btn:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffcc33;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #ffcc33;
+}
+
+::-webkit-scrollbar { width: 2px;  }/* for vertical scrollbars */
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5); }
