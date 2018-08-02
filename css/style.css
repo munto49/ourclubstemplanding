@@ -22,6 +22,11 @@ html {
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #cfcfcf;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #tf-home .overlay {
@@ -97,13 +102,16 @@ p {
 
 h2 {
     font-family: 'Lato', sans-serif;
-    line-height: 24px;
+    /*line-height: 24px;*/
     font-weight: 300;
 }
 
 .section-header h2 { 
     font-family: 'Lato', sans-serif;
-    text-transform: uppercase }
+    text-transform: uppercase; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 
 .fancy {
@@ -279,3 +287,11 @@ a:focus {
 ::-webkit-scrollbar { width: 2px;  }/* for vertical scrollbars */
 ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); }
 ::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5); }
+
+
+/* Contact Section */
+#tf-contact { padding: 60px 0 }
+.section-header {
+    padding: 40px 0;
+    text-align: center;
+}
