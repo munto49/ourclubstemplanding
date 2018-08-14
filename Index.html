@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123364319-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123364319-1');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,10 +27,23 @@
     <!-- Stylesheet
     ================================================== -->
     <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+    <!-- Mailchimp Stylesheet
+    ================================================== -->
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
 
     <!-- Google Fonts
     ================================================== -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -27,6 +51,7 @@
   
 
 
+    
 
   </head>
 
@@ -35,28 +60,25 @@
     ================================================== -->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="ourclubs.org">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="www.ourclubs.org">
         <img src="img/OC-Logo5-100x100.png" width="30" height="30" alt=""> OurClubs
         </a>
     
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Learn More</a>
+                    <a class="nav-link" href="#tf-intro">Learn More</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Keep in Touch</a>
+                    <a class="nav-link" href="#tf-contact">Keep in Touch</a>
                   </li>
                 </ul>
         </div>
@@ -71,8 +93,8 @@
                 <div class="container"> <!-- container -->
                     <div class="content-heading text-center"> <!-- Input Your Home Content Here -->
                         <h1>OurClubs.org - We're building the Total Club Solution</h1>
-                        <p class="lead">This will be the most comprehensive club solution for organisers and their members!</p>
-                        <a href="#tf-intro" class="scroll goto-btn text-uppercase">See what we do</a> <!-- Link to your portfolio section -->
+                        <p class="lead">We want this be the most comprehensive club solution for organisers and their members!</p>
+                        <a href="#tf-intro" class="scrollTop goto-btn text-uppercase">See what we've planned</a> <!-- Link to your portfolio section -->
                     </div><!-- End Input Your Home Content Here -->
                 </div> <!-- end container -->
             </div><!-- End Overlay Color -->
@@ -88,7 +110,7 @@
     
                     <div class="col-md-8 offset-md-2"> 
                         <img src="img/OC-Logo5-100x100.png" class="intro-logo img-responsive" alt="About OurClubs"> <!-- Your company logo in white -->
-                        <h4>Our Clubs is a platform which is dedicated to clubs and groups of all kinds. We offer high quality <em>tools for organisers</em>, combined with <em>social media</em> tools to encourage participation and collaboration whilst in a safe environment where members do not have to give up their <em>privacy to participate</em>.</h4>
+                        <h4>At OurClubs we are building a platform which is dedicated to clubs and groups of all kinds. We will offer high quality <em>tools for organisers</em>, combined with <em>social media</em> tools to encourage participation and collaboration whilst in a safe environment where members do not have to give up their <em>privacy to participate</em>.</h4>
                     </div>
                     
                 </div><!-- end row -->
@@ -103,12 +125,13 @@
             <div class="container"> <!-- container -->
     
                 <div class="section-header">
-                    <h2>Help Us Make OurClubs <span class="highlight"><strong>Awesome</strong></span></h2>
+                    <h2>Help Us Make OurClubs <span class="highlight"><strong>Great</strong></span></h2>
                     <h5><em>Please get involved and help us with a short survey to understand your needs</em></h5>
                     <div class="fancy"><span><img src="img/OC-Logo5-50x50.png" alt="..."></span></div>
                
-                    <p class="lead">Chose the survey most relevant to you...</p>
-                    <a class="btn btn-primary" href="#" role="button">Organiser</a>    <a class="btn btn-primary" href="#" role="button">Young Person</a>    <a class="btn btn-primary" href="#" role="button">Governing Body</a>
+                    <p class="lead">Click the button below to answer four short questions...</p>
+                    <p class="lead">and don't forget to register for our newsletter to keep up to date with our progress!</p>
+                    <p><a class="btn btn-primary" href="https://www.surveymonkey.co.uk/r/C2MXM38" role="button">Club Organiser Survey</a></p>    
                 </div>
 
                
@@ -122,13 +145,12 @@
     ================================================== -->
     
     
-    
     <div id="feature" class="gray-bg"> <!-- fullwidth gray background -->
     <div id="tf-services">
             <div class="container"> <!-- container -->
     
                 <div class="section-header">
-                    <h2>Here Is Just Some of the <span class="highlight"><strong>Awesomeness</strong></span></h2>
+                    <h2>Some of the Great<span class="highlight"><strong> Ideas </strong></span>so Far</h2>
                     <h5><em>We design and build fantastic web-based solutions for clubs</em></h5>
                     <div class="fancy"><span><img src="img/OC-Logo5-50x50.png" alt="..."></span></div>
                 </div>
@@ -142,7 +164,7 @@
                         <div class="media service"> <!-- Service #1 -->
                             <div class="media-body">
                                 <h4 class="media-heading">Club Pages</h4>
-                                <p>If you run a club you can setup a page for your group. Your club page is then home for all your club information including members, events, social media content.</p>
+                                <p>If you run a club you'll be able to setup a page for your group. Your club page is then home for all your club information including members, events, social media content.</p>
                             </div>
                             <div class="media-right media-middle">
                                 <i class="fa fa-columns"></i>
@@ -152,7 +174,7 @@
                         <div class="media service"> <!-- Service #2 -->
                             <div class="media-body">
                                 <h4 class="media-heading">Organiser Tools</h4>
-                                <p>We've built some fantastic tools to help you run your club including member and event management, mobile payment solutions, newsletters, calendar, venues, to name just a few!</p>
+                                <p>There will be some fantastic tools to help you run your club including member and event management, mobile payment solutions, newsletters, calendar, venues, to name just a few!</p>
                             </div>
                             <div class="media-right media-middle">
                                 <i class="fa fa-cogs"></i>
@@ -162,7 +184,7 @@
                         <div class="media service"> <!-- Service #3 -->
                             <div class="media-body">
                                 <h4 class="media-heading">The Radar</h4>
-                                <p>The Radar is where potential new members can find your club. Publicly posted content can be found, so if your promoting an event or posting a topical blog this is where it can be found.</p>
+                                <p>The Radar will be where potential new members can find your club. Publicly posted content can be found, so if your promoting an event or posting a topical blog this is where it will be found.</p>
                             </div>
                             <div class="media-right media-middle">
                                 <i class="fa fa-search"></i>
@@ -177,7 +199,7 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Social Tools</h4>
-                                <p>Our Clubs provides the tools to increase collaboration and particpation within your group which can lead to increased engagement. Post Blogs, Albums, or start a Conversation.</p>
+                                <p>OurClubs aims to provide the tools to increase collaboration and particpation within your group which can lead to increased engagement. Post Blogs, Albums, or start a Conversation.</p>
                             </div>
                         </div><!-- end Service #4 -->
     
@@ -187,7 +209,7 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Safeguarding</h4>
-                                <p>This is our top priority. We allow no advertising on Our Clubs and we do not share your data. We believe people should be able to participate online without giving up their privacy!</p>
+                                <p>This is our top priority. There wil be no advertising on OurClubs and we will not share your data. We believe people should be able to participate online without giving up their privacy!</p>
                             </div>
                         </div> <!-- end Service #5 -->
     
@@ -197,27 +219,67 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Encourage Learning</h4>
-                                <p>Clubs are a great place to learn which is why we develop solutions to facilitate this. Clubs can run Tutorials, Quiz's, and members can earn Digital Badges.</p>
+                                <p>Clubs are a great place to learn which is why we develop solutions to facilitate this. Clubs will be able to run Tutorials, Quiz's, so members can earn Digital Badges.</p>
                             </div> 
                         </div> <!-- end Service #6 -->
                     </div><!-- end Right Content Col 6 -->
                     
                 </div><!-- end row -->
-             
-                    
-    
-    
-    
     
               </div><!-- end container -->
-                  
-
-               
     
         </div>
     </div><!-- end grey bg -->
 
+    <!-- Keep in touch
+    ================================================== -->
+    <div id="tf-contact">
+        <div class="container"> <!-- container -->
 
+            <div class="section-header">
+                <h2>Make Sure we <span class="highlight"><strong>Keep in Touch</strong></span></h2>
+                <h5><em>Sign-up to Newsletters keeping you up to date</em></h5>
+                <div class="fancy"><span><img src="img/OC-Logo5-50x50.png" alt="..."></span></div>
+           
+                <!-- Begin MailChimp Signup Form -->
+
+
+                <div id="mc_embed_signup">
+                <form action="https://ourclubs.us18.list-manage.com/subscribe/post?u=f4da8b429a932d4ce9d895a47&amp;id=5af85a9305" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">First Name </label>
+                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">Last Name </label>
+                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f4da8b429a932d4ce9d895a47_5af85a9305" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+
+
+
+            </div>
+
+        </div> <!-- container end-->
+</div>
 
 
 
@@ -231,8 +293,8 @@
             <div class="container"><!-- container -->
                 <p class="float-left">© 2018 OurClubs. All rights reserved.</p> <!-- copyright text here-->
                 <ul class="list-inline social float-right">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> <!-- Change # With your FB Link -->
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li> <!-- Change # With your Twitter Link -->
+                    <li class="list-inline-item"><a href="https://www.facebook.com/OurClubs-222961651651879/"><i class="fab fa-facebook-f"></i></a></li> <!-- Change # With your FB Link -->
+                    <li class="list-inline-item"><a href="https://twitter.com/ourclubs"><i class="fab fa-twitter"></i></a></li> <!-- Change # With your Twitter Link -->
                     <li class="list-inline-item"><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li> <!-- Change # With your Snapchat Link -->
                 </ul>
             </div><!-- end container -->
@@ -248,7 +310,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+  
+
+</body>
 
 
 

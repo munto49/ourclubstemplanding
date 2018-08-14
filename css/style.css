@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
 body,
 html {
@@ -16,12 +16,17 @@ html {
 
 
 #tf-home {
-    background: url(../img/bg/together.jpg);
+    background: url(../img/bg/doit.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #cfcfcf;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #tf-home .overlay {
@@ -31,13 +36,14 @@ html {
     background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
-    padding: 20% 0;
+    padding: 22% 0;
     background-attachment: fixed;
 }
 
 #tf-home h1 { color: #ffcc33 }
-.content-heading p.lead { margin-bottom: 80px }
+.content-heading p.lead { margin-bottom: 40px }
 a.goto-btn {
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700;
     border-bottom: 2px solid transparent;
@@ -90,14 +96,22 @@ a.goto-btn {
 
 .highlight { color: #3c8dbc }
 
-p { font-size: 14px }
+p { 
+    font-family: 'Lato', sans-serif;
+    font-size: 14px }
 
 h2 {
-    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+    /*line-height: 24px;*/
     font-weight: 300;
 }
 
-.section-header h2 { text-transform: uppercase }
+.section-header h2 { 
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 
 .fancy {
@@ -193,6 +207,7 @@ ul.social li a i:hover { border-color: #ffffff }
 #feature { padding: 60px 0 }
 .features-content { padding: 0 30px 0 }
 .features-content h4 {
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #333333;
@@ -231,6 +246,7 @@ ul.social li a i:hover { border-color: #ffffff }
 .process:hover i.fa,
 .service:hover i.fa { background-color: #333333 }
 h4.media-heading {
+    font-family: 'Lato', sans-serif;
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 16px;
@@ -241,5 +257,41 @@ h4.media-heading {
 }
 
 h5.media-heading {
+    font-family: 'Lato', sans-serif;
     color: #3c8dbc;
+}
+
+
+
+
+/* Used for scroll */
+
+a.goto-btn {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+a.goto-btn:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffcc33;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #ffcc33;
+}
+
+::-webkit-scrollbar { width: 2px;  }/* for vertical scrollbars */
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5); }
+
+
+/* Contact Section */
+#tf-contact { padding: 60px 0 }
+.section-header {
+    padding: 40px 0;
+    text-align: center;
 }
